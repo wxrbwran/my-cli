@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/utils",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "",
@@ -17,7 +17,7 @@
     "test": "echo \"Error: run tests from root\" utils"
   },
   "dependencies": {
-    "@xzl-cli-dev/core": "^0.0.2"
+    "@xzl-cli-dev/core": "^0.0.1"
   },
   "gitHead": "575f61112c00618a1038db267b99bc8dbc4f8134"
 }
