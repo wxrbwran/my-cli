@@ -1,10 +1,9 @@
 {
   "name": "@xzl-cli-dev/core",
-  "version": "0.0.6",
+  "version": "0.0.0",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "",
-  "license": "ISC",
   "main": "lib/index.js",
   "bin": {
     "xzl-cli-dev": "bin/index.js"
@@ -20,7 +19,10 @@
     "test": "echo \"Error: run tests from root\" core"
   },
   "dependencies": {
-    "@xzl-cli-dev/utils": "^0.0.6"
+    "@xzl-cli-dev/utils": "^0.0.2"
   },
-  "gitHead": "752cac2a21f728eb9395b290acdb831eb9521546"
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "575f61112c00618a1038db267b99bc8dbc4f8134"
 }
