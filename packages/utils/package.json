@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/utils",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "",
@@ -18,5 +18,6 @@
   },
   "dependencies": {
     "@xzl-cli-dev/core": "^0.0.2"
-  }
+  },
+  "gitHead": "575f61112c00618a1038db267b99bc8dbc4f8134"
 }

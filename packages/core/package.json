@@ -21,5 +21,6 @@
   },
   "dependencies": {
     "@xzl-cli-dev/utils": "^0.0.2"
-  }
+  },
+  "gitHead": "575f61112c00618a1038db267b99bc8dbc4f8134"
 }
