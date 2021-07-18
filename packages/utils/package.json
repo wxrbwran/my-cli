@@ -17,10 +17,9 @@
     "test": "echo \"Error: run tests from root\" utils"
   },
   "dependencies": {
-    "@xzl-cli-dev/core": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e1720419d6a68c1fff3dfb3ef44b23171cb6b1d7"
+  "gitHead": "752cac2a21f728eb9395b290acdb831eb9521546"
 }
