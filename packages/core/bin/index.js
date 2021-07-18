@@ -1,3 +1,3 @@
 #! /usr/local/bin node
 
-console.log("hello");
+console.log("hello world");
