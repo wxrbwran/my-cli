@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "",
@@ -15,8 +15,6 @@
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" utils"
-  },
-  "dependencies": {
   },
   "publishConfig": {
     "access": "public"
