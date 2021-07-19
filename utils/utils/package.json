@@ -1,10 +1,9 @@
 {
   "name": "@xzl-cli-dev/utils",
-  "version": "0.0.7",
+  "version": "0.0.6",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "",
-  "license": "ISC",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib",
@@ -17,7 +16,7 @@
     "test": "echo \"Error: run tests from root\" utils"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public" 
   },
   "gitHead": "2a494ac0b907b1f2a9c95276a52b24368598bb20"
 }
