@@ -19,9 +19,14 @@
     "test": "echo \"Error: run tests from root\" core"
   },
   "dependencies": {
+    "@xzl-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
     "@xzl-cli-dev/log": "file:../../utils/log",
+    "@xzl-cli-dev/init": "file:../../commands/init",
     "colors": "^1.4.0",
+    "commander": "^8.0.0",
+    "dotenv": "^10.0.0",
     "import-local": "^3.0.2",
+    "minimist": "^1.2.5",
     "npmlog": "^4.1.2",
     "path-exists": "^4.0.0",
     "root-check": "1.0.0",
