@@ -7,6 +7,7 @@ const userHome = require('user-home');
 const pathExists = require('path-exists').sync;
 const commander = require('commander');
 const log = require('@xzl-cli-dev/log');
+const exec = require('@xzl-cli-dev/exec');
 const init = require('@xzl-cli-dev/init');
 const pkg = require('../package.json');
 const { LOWEST_NODE_VERSION, DEFAULT_CLI_HOME } = require('./const');
@@ -16,18 +17,20 @@ const program = new commander.Command();
 
 async function core() {
   try {
-    checkPkgVersion();
-    checkNodeVersion();
-    checkRoot();
-    checkUserHome();
-    // checkInputArgs();
-    // log.verbose('debug', 'test debug log');
-    checkEnv();
-    await checkGlobalUpdate();
+    await prepare();
     registerCommand();
   } catch (err) {
     log.error(err.message);
   }
+}
+
+async function prepare() {
+  checkPkgVersion();
+  checkNodeVersion();
+  checkRoot();
+  checkUserHome();
+  checkEnv();
+  await checkGlobalUpdate();
 }
 
 function checkPkgVersion() {
@@ -53,22 +56,6 @@ function checkUserHome() {
   }
 }
 
-function checkInputArgs() {
-  const minimist = require('minimist');
-  args = minimist(process.argv.slice(2));
-  // console.log(args);
-  checkArgs();
-}
-
-function checkArgs() {
-  if (args.debug) {
-    process.env.LOG_LEVEL = 'verbose';
-  } else {
-    process.env.LOG_LEVEL = 'info';
-  }
-  log.level = process.env.LOG_LEVEL;
-}
-
 function checkEnv() {
   const dotenv = require('dotenv');
   const dotenvPath = path.resolve(userHome, '.env');
@@ -78,7 +65,7 @@ function checkEnv() {
     });
   }
   createDefaultConfig();
-  log.verbose('环境变量', process.env.CLI_HOME_PATH);
+  // log.verbose('环境变量', process.env.CLI_HOME_PATH);
 }
 
 function createDefaultConfig() {
@@ -113,9 +100,15 @@ async function checkGlobalUpdate() {
 function registerCommand() {
   program
     .name(Object.keys(pkg.bin)[0])
+    .version(pkg.version)
     .usage('<command> [options]')
     .option('-d --debug', '是否开启调试模式', false)
-    .version(pkg.version);
+    .option('-tp --targetPath <targetPath>', '是否指定本地调试文件路径', '');
+
+  program
+    .command('init [projectName]')
+    .option('-f, --force', '目录不为空时，是否强制初始化项目')
+    .action(exec);
 
   // debug模式
   program.on('option:debug', () => {
@@ -124,10 +117,11 @@ function registerCommand() {
     log.verbose('ye~', '启用debug模式');
   });
 
-  program
-    .command('init [projectName]')
-    .option('-f, --force', '目录不为空时，是否强制初始化项目')
-    .action(init);
+  program.on('option:targetPath', () => {
+    // console.log('0', program.opts());
+    console.log('1', program.opts().targetPath);
+    process.env.CLI_TARGET_PATH = program.opts().targetPath;
+  });
 
   // 对未知命令的监听
   program.on('command:*', (unknownCmds) => {
