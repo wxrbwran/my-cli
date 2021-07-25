@@ -26,7 +26,8 @@
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
   "dependencies": {
-    "@xzl-cli-dev/log": "file:../../utils/log",
-    "@xzl-cli-dev/package": "file:../../models/package"
-  }
+    "@xzl-cli-dev/log": "^0.0.8",
+    "@xzl-cli-dev/package": "^0.0.8"
+  },
+  "gitHead": "9fb244737adf3f6d1cf28ac50c8c64dfe6aff723"
 }

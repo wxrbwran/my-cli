@@ -1,5 +1,5 @@
 {
-  "name": "get-npm-info",
+  "name": "@xzl-cli-dev/get-npm-info",
   "version": "0.0.8",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
@@ -29,5 +29,6 @@
     "axios": "^0.21.1",
     "semver": "^7.3.5",
     "url-join": "^4.0.1"
-  }
+  },
+  "gitHead": "9fb244737adf3f6d1cf28ac50c8c64dfe6aff723"
 }
