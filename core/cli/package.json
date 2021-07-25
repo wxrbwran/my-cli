@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/core",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "",
@@ -19,10 +19,10 @@
     "test": "echo \"Error: run tests from root\" core"
   },
   "dependencies": {
+    "@xzl-cli-dev/exec": "file:../exec",
     "@xzl-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
     "@xzl-cli-dev/init": "file:../../commands/init",
     "@xzl-cli-dev/log": "file:../../utils/log",
-    "@xzl-cli-dev/exec": "file:../exec",
     "colors": "^1.4.0",
     "commander": "7.0.0",
     "dotenv": "^10.0.0",
