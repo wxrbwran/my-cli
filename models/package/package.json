@@ -1,5 +1,5 @@
 {
-  "name": "@xzl-cli-dev/exec",
+  "name": "@xzl-cli-dev/package",
   "version": "0.0.7",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
@@ -26,7 +26,6 @@
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
   "dependencies": {
-    "@xzl-cli-dev/package": "file:../../models/package",
-    "@xzl-cli-dev/log": "file:../../utils/log"
+    "@xzl-cli-dev/utils": "file:../../utils/utils"
   }
 }
