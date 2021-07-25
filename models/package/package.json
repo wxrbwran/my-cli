@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/package",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
@@ -26,7 +26,7 @@
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
   "dependencies": {
-    "@xzl-cli-dev/utils": "^0.0.8"
+    "@xzl-cli-dev/utils": "^0.0.9"
   },
   "gitHead": "9fb244737adf3f6d1cf28ac50c8c64dfe6aff723"
 }
