@@ -13,7 +13,8 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
+    "registry": "http://registry.npmjs.org/",
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,5 @@
   "dependencies": {
     "@xzl-cli-dev/utils": "^0.0.13"
   },
-  "gitHead": "5da3a6562954c968aa3a61e4a70caa942e5b4fcb"
+  "gitHead": "312e3955e85b666c0a1ba7c9f181df7c43d9f9b8"
 }
