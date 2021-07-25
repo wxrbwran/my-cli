@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/init",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
@@ -16,7 +16,6 @@
     "registry": "http://registry.npmjs.org/",
     "access": "public"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wxrbwran/my-cli.git"
