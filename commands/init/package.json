@@ -13,8 +13,10 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
+    "registry": "http://registry.npmjs.org/",
+    "access": "public"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wxrbwran/my-cli.git"
@@ -25,5 +27,5 @@
   "bugs": {
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
-  "gitHead": "9fb244737adf3f6d1cf28ac50c8c64dfe6aff723"
+  "gitHead": "14e3c0f162e9ed52b4cab21b5fcc5e40b49d8619"
 }
