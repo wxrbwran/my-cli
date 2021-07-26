@@ -21,6 +21,7 @@ async function core() {
     registerCommand();
   } catch (err) {
     log.error(err.message);
+    console.log(err);
   }
 }
 
