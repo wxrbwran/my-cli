@@ -120,7 +120,7 @@ function registerCommand() {
 
   program.on('option:targetPath', () => {
     // console.log('0', program.opts());
-    console.log('1', program.opts().targetPath);
+    // console.log('1', program.opts().targetPath);
     process.env.CLI_TARGET_PATH = program.opts().targetPath;
   });
 

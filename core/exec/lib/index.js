@@ -12,7 +12,7 @@ const CACHE = 'dependencies';
 async function exec() {
   // log.verbose('exec', args);
   const cmdObj = arguments[arguments.length - 1];
-  // log.verbose('exec cmdObj', cmdObj.opts().force);
+  log.verbose('exec cmdObj', cmdObj.opts());
   log.verbose('exec cmdObj', cmdObj.name());
   const cmdName = cmdObj.name();
   const packageName = SETTINGS[cmdName];
