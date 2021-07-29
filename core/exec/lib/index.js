@@ -21,23 +21,26 @@ async function exec() {
   let targetPath = process.env.CLI_TARGET_PATH;
   const homePath = process.env.CLI_HOME_PATH;
   let storeDir = '';
-
+  let pkg = null;
   if (!targetPath) {
     targetPath = path.resolve(homePath, CACHE);
+    storeDir = path.resolve(targetPath, 'node_modules');
+    pkg = new Package({ targetPath, storeDir, packageName, packageVersion });
+    // console.log('pkg', pkg);
+    if (await pkg.exists()) {
+      // 更新
+      await pkg.update();
+    } else {
+      // 安装
+      await pkg.install();
+    }
+  } else {
+    pkg = new Package({ targetPath, packageName, packageVersion });
   }
-  storeDir = path.resolve(targetPath, 'node_modules');
+  // console.log('pkg.exists()', await pkg.exists());
 
   log.verbose('targetPath', targetPath);
   log.verbose('storeDir', storeDir);
-  const pkg = new Package({ targetPath, storeDir, packageName, packageVersion });
-  console.log('pkg', pkg);
-  console.log('pkg.exists()', pkg.exists());
-  if (pkg.exists()) {
-    // 更新
-  } else {
-    // 安装
-    await pkg.install();
-  }
 
   const rootFile = pkg.getRootPath();
   log.verbose('rootFile', rootFile);

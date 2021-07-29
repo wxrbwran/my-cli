@@ -2,7 +2,7 @@
   "packages": [
     "core/*",
     "commands/*",
-    "models/*",
+    "modules/*",
     "utils/*"
   ],
   "npmClient": "yarn",
