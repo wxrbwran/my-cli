@@ -2,6 +2,7 @@
 const path = require('path');
 const log = require('@xzl-cli-dev/log');
 const Package = require('@xzl-cli-dev/package');
+const cp = require('child_process');
 
 const SETTINGS = {
   init: '@xzl-cli-dev/init',
@@ -45,7 +46,39 @@ async function exec() {
   const rootFile = pkg.getRootPath();
   log.verbose('rootFile', rootFile);
   if (rootFile) {
-    require(rootFile).apply(null, arguments);
+    try {
+      const args = Array.from(arguments);
+      args.length = 2;
+      // require(rootFile).call(null, args)
+      const argsString = JSON.stringify(args);
+      console.log('argsString', argsString);
+      const code = `require('${rootFile}').call(null, ${argsString})`;
+      // const code = "console.log(1);"
+      const child = spawn('node', ['-e', code], {
+        stdio: 'inherit',
+        cwd: process.cwd(),
+      });
+      child.on("error", (e) => {
+        log.error(e.message);
+        log.error(e);
+        process.exit(1);
+      })
+      child.on('exit', (e) => {
+        log.verbose("命令执行成功", e);
+        console.log('命令执行成功', e);
+        process.exit(e);
+      });
+    } catch (e) {
+      log.error(e.message);
+    }
   }
 }
+
+function spawn(command, args, options) {
+  const win32 = process.platform === 'win32';
+  const cmd = win32 ? 'cmd' : command;
+  const _args = win32 ? ['/c'].concat(command, args) : args;
+  return cp.spawn(cmd, _args, options || {});
+}
+
 module.exports = exec;

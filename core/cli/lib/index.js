@@ -8,7 +8,6 @@ const pathExists = require('path-exists').sync;
 const commander = require('commander');
 const log = require('@xzl-cli-dev/log');
 const exec = require('@xzl-cli-dev/exec');
-const init = require('@xzl-cli-dev/init');
 const pkg = require('../package.json');
 const { LOWEST_NODE_VERSION, DEFAULT_CLI_HOME } = require('./const');
 
@@ -27,7 +26,7 @@ async function core() {
 
 async function prepare() {
   checkPkgVersion();
-  checkNodeVersion();
+  // checkNodeVersion();
   checkRoot();
   checkUserHome();
   checkEnv();
