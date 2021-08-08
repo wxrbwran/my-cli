@@ -30,8 +30,7 @@
     "npmlog": "^4.1.2",
     "path-exists": "^4.0.0",
     "root-check": "1.0.0",
-    "semver": "^7.3.5",
-    "user-home": "^3.0.0"
+    "semver": "^7.3.5"
   },
   "publishConfig": {
     "access": "public"

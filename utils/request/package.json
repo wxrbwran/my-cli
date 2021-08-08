@@ -1,8 +1,8 @@
 {
-  "name": "@xzl-cli-dev/exec",
+  "name": "@xzl-cli-dev/request",
   "version": "0.0.15",
   "description": "> TODO: description",
-  "author": "wxrbwran <wxrbw@qq.com>",
+  "author": "wuxiaoran <wuxiaoran@xinzhili.cn>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
   "main": "lib/index.js",
   "directories": {
@@ -27,9 +27,6 @@
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
   "dependencies": {
-    "@xzl-cli-dev/log": "file:../../utils/log",
-    "@xzl-cli-dev/utils": "file:../../utils/utils",
-    "@xzl-cli-dev/package": "file:../../modules/package"
-  },
-  "gitHead": "bc022d5112a31633f5cca94af179dcdd672b2ae9"
+    "axios": "^0.21.1"
+  }
 }

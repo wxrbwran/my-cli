@@ -42,7 +42,7 @@ class Package {
     if (this.storeDir) {
       // 缓存模式
       await this.prepare();
-      console.log('prepare11', this.cacheFilePath);
+      // log.verbose('package cacheFilePath', this.cacheFilePath);
       return pathExists(this.cacheFilePath);
     } else {
       return pathExists(this.targetPath);
@@ -80,6 +80,8 @@ class Package {
         registry: getDefaultRegistry(),
         pkgs: [{ name: this.packageName, version: lstestVersion }],
       });
+      this.packageVersion = lstestVersion;
+    } else {
       this.packageVersion = lstestVersion;
     }
     // return latestFilePath;

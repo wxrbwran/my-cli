@@ -20,12 +20,18 @@
     "type": "git",
     "url": "git+https://github.com/wxrbwran/my-cli.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "dependencies": {
     "@xzl-cli-dev/command": "file:../../modules/command",
-    "@xzl-cli-dev/log": "file:../../utils/log"
+    "@xzl-cli-dev/log": "file:../../utils/log",
+    "@xzl-cli-dev/package": "file:../../modules/package",
+    "@xzl-cli-dev/request": "file:../../utils/request",
+    "@xzl-cli-dev/utils": "file:../../utils/utils",
+    "ejs": "^3.1.6",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.7",
+    "inquirer": "^8.1.2",
+    "kebab-case": "^1.0.1",
+    "semver": "^7.3.5"
   },
   "bugs": {
     "url": "https://github.com/wxrbwran/my-cli/issues"
