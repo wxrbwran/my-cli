@@ -15,7 +15,7 @@ const Package = require('@xzl-cli-dev/package');
 const templates = require('./template');
 
 const TYPE_PROJECT = 'project';
-const TYPE_COMPONENT = 'component';
+// const TYPE_COMPONENT = 'component';
 
 const TEMPLATE_TYPE_NORMAL = 'normal';
 const TEMPLATE_TYPE_CUSTOM = 'custom';
