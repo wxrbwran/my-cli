@@ -263,12 +263,15 @@ class InitCommand extends Command {
           Promise.all(
             files.map((file) => {
               const filePath = path.resolve(dir, file);
-              console.log(filePath);
+              // console.log(filePath);
               return new Promise((resolveInner, rejectInner) => {
                 // console.log('renderFile projectInfo', projectInfo);
                 ejs.renderFile(filePath, projectInfo, (err, res) => {
                   // console.log(err, res);
                   if (err) {
+                    log.error('renderFile filePath', filePath);
+                    log.error('renderFile err', err);
+
                     rejectInner(err);
                   } else {
                     fs.writeFileSync(filePath, res)
@@ -307,7 +310,18 @@ class InitCommand extends Command {
     } finally {
       spinner.stop(true);
     }
-    const ignore = ['node_modules/**', '**/*.png', '**/*.jpg', '**/*.ico', '**/*.svg', "public/**"];
+    const ignore = [
+      'node_modules/**',
+      '**/*.jpeg',
+      '**/*.jpg',
+      '**/*.png',
+      '**/*.gif',
+      '**/*.bmp',
+      '**/*.woff',
+      '**/*.ico',
+      '**/*.svg',
+      'public/**',
+    ];
     await this.ejsRender({ ignore });
     // 依赖安装
     // console.log(this.templateInfo);
