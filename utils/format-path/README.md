@@ -1,11 +1,11 @@
-# `@xzl-cli-dev/format-path`
+# `@xzl-fe/format-path`
 
 > TODO: description
 
 ## Usage
 
 ```
-const formatPath = require('@xzl-cli-dev/format-path');
+const formatPath = require('@xzl-fe/format-path');
 
 // TODO: DEMONSTRATE API
 ```

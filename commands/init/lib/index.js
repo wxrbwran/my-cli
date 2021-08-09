@@ -7,10 +7,10 @@ const inquirer = require('inquirer');
 const semver = require('semver');
 const kebab = require('kebab-case');
 const { homedir } = require('os');
-const Command = require('@xzl-cli-dev/command')
-const log = require('@xzl-cli-dev/log');
-const utils = require('@xzl-cli-dev/utils');
-const Package = require('@xzl-cli-dev/package');
+const Command = require('@xzl-fe/command')
+const log = require('@xzl-fe/log');
+const utils = require('@xzl-fe/utils');
+const Package = require('@xzl-fe/package');
 // const getProjectTemplate = require('./getProjectTemplate')
 const templates = require('./template');
 
@@ -173,7 +173,7 @@ class InitCommand extends Command {
     // console.log('templateInfo', templateInfo);
     // console.log('userHome', homedir());
 
-    const targetPath = path.resolve(homedir(), '.xzl-cli-dev', 'template');
+    const targetPath = path.resolve(homedir(), '.xzl-fe', 'template');
     const storeDir = path.resolve(targetPath, 'node_modules');
     // console.log('targetPath', targetPath);
     // console.log('storeDir', storeDir);

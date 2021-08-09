@@ -4,13 +4,13 @@ const fs = require('fs-extra');
 const npminstall = require('npminstall');
 const pkgDir = require('pkg-dir').sync;
 const pathExists = require('path-exists').sync;
-const utils = require('@xzl-cli-dev/utils');
-const { formatPath } = require('@xzl-cli-dev/format-path');
+const utils = require('@xzl-fe/utils');
+const { formatPath } = require('@xzl-fe/format-path');
 const {
   getNpmInfo,
   getDefaultRegistry,
   getNpmLastestVersion,
-} = require('@xzl-cli-dev/get-npm-info');
+} = require('@xzl-fe/get-npm-info');
 
 class Package {
   constructor(opts) {

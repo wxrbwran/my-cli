@@ -1,11 +1,11 @@
-# `@xzl-cli-dev/package`
+# `@xzl-fe/package`
 
 > TODO: description
 
 ## Usage
 
 ```
-const package = require('@xzl-cli-dev/package');
+const package = require('@xzl-fe/package');
 
 // TODO: DEMONSTRATE API
 ```

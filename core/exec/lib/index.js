@@ -1,12 +1,12 @@
 'use strict';
 const path = require('path');
-const log = require('@xzl-cli-dev/log');
-const utils = require('@xzl-cli-dev/utils');
+const log = require('@xzl-fe/log');
+const utils = require('@xzl-fe/utils');
 
-const Package = require('@xzl-cli-dev/package');
+const Package = require('@xzl-fe/package');
 
 const SETTINGS = {
-  init: '@xzl-cli-dev/init',
+  init: '@xzl-fe/init',
 };
 
 const CACHE = 'dependencies';

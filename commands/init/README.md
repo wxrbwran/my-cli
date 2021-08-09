@@ -1,11 +1,11 @@
-# `@xzl-cli-dev/init`
+# `@xzl-fe/init`
 
 > TODO: description
 
 ## Usage
 
 ```
-const init = require('@xzl-cli-dev/init');
+const init = require('@xzl-fe/init');
 
 // TODO: DEMONSTRATE API
 入口命令

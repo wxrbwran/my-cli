@@ -6,8 +6,8 @@ const rootCheck = require('root-check');
 const {homedir} = require('os');
 const pathExists = require('path-exists').sync;
 const commander = require('commander');
-const log = require('@xzl-cli-dev/log');
-const exec = require('@xzl-cli-dev/exec');
+const log = require('@xzl-fe/log');
+const exec = require('@xzl-fe/exec');
 const pkg = require('../package.json');
 const { LOWEST_NODE_VERSION, DEFAULT_CLI_HOME } = require('./const');
 
@@ -41,7 +41,7 @@ function checkNodeVersion() {
   log.info('cli', currentNodeVersion);
   const lowestNodeVersion = LOWEST_NODE_VERSION;
   if (semver.lt(currentNodeVersion, lowestNodeVersion)) {
-    throw new Error(colors.red(`xzl-cli需要安装${LOWEST_NODE_VERSION}版本以上的Node.js`));
+    throw new Error(colors.red(`xzl-fe需要安装${LOWEST_NODE_VERSION}版本以上的Node.js`));
   }
 }
 
@@ -84,7 +84,7 @@ async function checkGlobalUpdate() {
   const currentVersion = pkg.version;
   const pkgName = pkg.name;
   log.verbose('检查版本号', currentVersion);
-  const { getNpmSemserVersions } = require('@xzl-cli-dev/get-npm-info');
+  const { getNpmSemserVersions } = require('@xzl-fe/get-npm-info');
   const hasNewVersion = await getNpmSemserVersions(pkgName, currentVersion);
   if (hasNewVersion) {
     log.warn(

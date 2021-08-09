@@ -1,11 +1,11 @@
-# `@xzl-cli-dev/Command`
+# `@xzl-fe/Command`
 
 > TODO: description
 
 ## Usage
 
 ```
-const command = require('@xzl-cli-dev/Command');
+const command = require('@xzl-fe/Command');
 
 // TODO: DEMONSTRATE API
 ```

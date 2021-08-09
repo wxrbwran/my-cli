@@ -1,11 +1,11 @@
-# `@xzl-cli-dev/log`
+# `@xzl-fe/log`
 
 > TODO: description
 
 ## Usage
 
 ```
-const log = require('@xzl-cli-dev/log');
+const log = require('@xzl-fe/log');
 
 // TODO: DEMONSTRATE API
 ```

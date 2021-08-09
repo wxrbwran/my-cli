@@ -1,11 +1,11 @@
-# `@xzl-cli-dev/exec`
+# `@xzl-fe/exec`
 
 > TODO: description
 
 ## Usage
 
 ```
-const exec = require('@xzl-cli-dev/exec');
+const exec = require('@xzl-fe/exec');
 
 // TODO: DEMONSTRATE API
 ```

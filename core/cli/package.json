@@ -1,12 +1,12 @@
 {
-  "name": "@xzl-cli-dev/core",
-  "version": "0.2.2",
+  "name": "@xzl-fe/core",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "",
   "main": "lib/index.js",
   "bin": {
-    "xzl-cli-dev": "bin/index.js"
+    "xzl-fe": "bin/index.js"
   },
   "directories": {
     "lib": "lib",
@@ -15,14 +15,11 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" core"
-  },
   "dependencies": {
-    "@xzl-cli-dev/exec": "^0.2.2",
-    "@xzl-cli-dev/get-npm-info": "^0.2.2",
-    "@xzl-cli-dev/init": "^0.2.2",
-    "@xzl-cli-dev/log": "^0.2.2",
+    "@xzl-fe/exec": "^0.0.1",
+    "@xzl-fe/get-npm-info": "^0.0.1",
+    "@xzl-fe/init": "^0.0.1",
+    "@xzl-fe/log": "^0.0.1",
     "colors": "^1.4.0",
     "commander": "7.0.0",
     "dotenv": "^10.0.0",

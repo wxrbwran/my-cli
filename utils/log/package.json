@@ -1,6 +1,6 @@
 {
-  "name": "@xzl-cli-dev/log",
-  "version": "0.2.2",
+  "name": "@xzl-fe/log",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
@@ -19,9 +19,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wxrbwran/my-cli.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/wxrbwran/my-cli/issues"

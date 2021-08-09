@@ -1,8 +1,8 @@
 'use strict';
 const semver = require('semver');
 const colors = require('colors/safe');
-const log = require('@xzl-cli-dev/log')
-// const {isObject} = require('@xzl-cli-dev/utils');
+const log = require('@xzl-fe/log')
+// const {isObject} = require('@xzl-fe/utils');
 
 const { LOWEST_NODE_VERSION, DEFAULT_CLI_HOME } = require('./const');
 
@@ -40,7 +40,7 @@ class Command {
     // log.info('cli', currentNodeVersion);
     const lowestNodeVersion = LOWEST_NODE_VERSION;
     if (semver.lt(currentNodeVersion, lowestNodeVersion)) {
-      throw new Error(colors.red(`xzl-cli需要安装${LOWEST_NODE_VERSION}版本以上的Node.js`));
+      throw new Error(colors.red(`xzl-fe需要安装${LOWEST_NODE_VERSION}版本以上的Node.js`));
     }
   }
   initArgs() {
