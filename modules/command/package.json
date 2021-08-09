@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/command",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "> TODO: description",
   "author": "wuxiaoran <wuxiaoran@xinzhili.cn>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
@@ -24,8 +24,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@xzl-cli-dev/log": "^0.2.1",
-    "@xzl-cli-dev/utils": "^0.2.1",
+    "@xzl-cli-dev/log": "^0.2.2",
+    "@xzl-cli-dev/utils": "^0.2.2",
     "colors": "^1.4.0",
     "semver": "^7.3.5"
   },
