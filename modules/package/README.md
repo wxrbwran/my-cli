@@ -6,6 +6,6 @@
 
 ```
 const package = require('@xzl-fe/package');
-ceshi
+ceshi11
 // TODO: DEMONSTRATE API
 ```
