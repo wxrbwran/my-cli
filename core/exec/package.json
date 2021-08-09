@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/exec",
-  "version": "0.0.15",
+  "version": "0.1.0",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
@@ -28,8 +28,8 @@
   },
   "dependencies": {
     "@xzl-cli-dev/log": "file:../../utils/log",
-    "@xzl-cli-dev/utils": "file:../../utils/utils",
-    "@xzl-cli-dev/package": "file:../../modules/package"
+    "@xzl-cli-dev/package": "file:../../modules/package",
+    "@xzl-cli-dev/utils": "file:../../utils/utils"
   },
   "gitHead": "bc022d5112a31633f5cca94af179dcdd672b2ae9"
 }
