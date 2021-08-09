@@ -1,6 +1,6 @@
 {
   "name": "@xzl-fe/exec",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
@@ -27,9 +27,9 @@
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
   "dependencies": {
-    "@xzl-fe/log": "^0.3.0",
-    "@xzl-fe/package": "^0.3.0",
-    "@xzl-fe/utils": "^0.3.0"
+    "@xzl-fe/log": "^0.3.1",
+    "@xzl-fe/package": "^0.3.1",
+    "@xzl-fe/utils": "^0.3.1"
   },
   "gitHead": "aa149f72d7c628d30d8141cff0b8eda41d4c6a82"
 }
