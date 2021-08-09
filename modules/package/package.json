@@ -1,6 +1,6 @@
 {
   "name": "@xzl-cli-dev/package",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
@@ -27,9 +27,9 @@
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
   "dependencies": {
-    "@xzl-cli-dev/format-path": "^0.1.0",
-    "@xzl-cli-dev/get-npm-info": "^0.1.0",
-    "@xzl-cli-dev/utils": "^0.1.0",
+    "@xzl-cli-dev/format-path": "^0.2.0",
+    "@xzl-cli-dev/get-npm-info": "^0.2.0",
+    "@xzl-cli-dev/utils": "^0.2.0",
     "fs-extra": "^10.0.0",
     "npminstall": "^4.11.0",
     "path-exists": "^4.0.0",
