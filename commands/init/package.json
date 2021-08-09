@@ -21,11 +21,11 @@
     "url": "git+https://github.com/wxrbwran/my-cli.git"
   },
   "dependencies": {
-    "@xzl-cli-dev/command": "file:../../modules/command",
-    "@xzl-cli-dev/log": "file:../../utils/log",
-    "@xzl-cli-dev/package": "file:../../modules/package",
-    "@xzl-cli-dev/request": "file:../../utils/request",
-    "@xzl-cli-dev/utils": "file:../../utils/utils",
+    "@xzl-cli-dev/command": "^0.1.0",
+    "@xzl-cli-dev/log": "^0.1.0",
+    "@xzl-cli-dev/package": "^0.1.0",
+    "@xzl-cli-dev/request": "^0.1.0",
+    "@xzl-cli-dev/utils": "^0.1.0",
     "ejs": "^3.1.6",
     "fs-extra": "^10.0.0",
     "glob": "^7.1.7",
@@ -36,5 +36,5 @@
   "bugs": {
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
-  "gitHead": "bc022d5112a31633f5cca94af179dcdd672b2ae9"
+  "gitHead": "3524df2bd5ea3605dbe6a2abddb3902ef513c589"
 }

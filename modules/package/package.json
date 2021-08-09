@@ -27,13 +27,13 @@
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
   "dependencies": {
-    "@xzl-cli-dev/format-path": "file:../../utils/format-path",
-    "@xzl-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
-    "@xzl-cli-dev/utils": "file:../../utils/utils",
+    "@xzl-cli-dev/format-path": "^0.1.0",
+    "@xzl-cli-dev/get-npm-info": "^0.1.0",
+    "@xzl-cli-dev/utils": "^0.1.0",
     "fs-extra": "^10.0.0",
     "npminstall": "^4.11.0",
     "path-exists": "^4.0.0",
     "pkg-dir": "^5.0.0"
   },
-  "gitHead": "bc022d5112a31633f5cca94af179dcdd672b2ae9"
+  "gitHead": "3524df2bd5ea3605dbe6a2abddb3902ef513c589"
 }
