@@ -24,7 +24,6 @@
     "@xzl-fe/command": "^0.3.1",
     "@xzl-fe/log": "^0.3.1",
     "@xzl-fe/package": "^0.3.1",
-    "@xzl-fe/request": "^0.0.1",
     "@xzl-fe/utils": "^0.3.1",
     "ejs": "^3.1.6",
     "fs-extra": "^10.0.0",
