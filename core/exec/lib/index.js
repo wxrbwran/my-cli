@@ -14,8 +14,8 @@ const CACHE = 'dependencies';
 async function exec() {
   // log.verbose('exec', args);
   const cmdObj = arguments[arguments.length - 1];
-  log.verbose('exec cmdObj', cmdObj.opts());
-  log.verbose('exec cmdObj', cmdObj.name());
+  log.verbose('exec opts', cmdObj.opts());
+  log.verbose('exec name', cmdObj.name());
   const cmdName = cmdObj.name();
   const packageName = SETTINGS[cmdName];
   const packageVersion = 'latest';
@@ -24,6 +24,8 @@ async function exec() {
   const homePath = process.env.CLI_HOME_PATH;
   let storeDir = '';
   let pkg = null;
+  // console.log('targetPath', targetPath);
+  log.verbose('exec targetPath', targetPath);
   if (!targetPath) {
     targetPath = path.resolve(homePath, CACHE);
     storeDir = path.resolve(targetPath, 'node_modules');

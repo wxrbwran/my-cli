@@ -3,7 +3,7 @@
 const log = require('npmlog');
 
 log.level = process.env.LOG_LEVEL || 'info';
-log.heading = 'go! ';
+log.heading = 'xzl-fe';
 
 log.addLevel('success', 2000, { fg: 'green', bold: true, bg: 'grey' });
 

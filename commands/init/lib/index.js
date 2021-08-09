@@ -11,7 +11,8 @@ const Command = require('@xzl-cli-dev/command')
 const log = require('@xzl-cli-dev/log');
 const utils = require('@xzl-cli-dev/utils');
 const Package = require('@xzl-cli-dev/package');
-const getProjectTemplate = require('./getProjectTemplate')
+// const getProjectTemplate = require('./getProjectTemplate')
+const templates = require('./template');
 
 const TYPE_PROJECT = 'project';
 const TYPE_COMPONENT = 'component';
@@ -47,7 +48,8 @@ class InitCommand extends Command {
   }
   async prepare() {
     // 0. 判断项目模版是否存在
-    const template = await getProjectTemplate();
+    // const template = await getProjectTemplate();
+    const template = templates;
     // console.log('template', template);
     if (template?.length === 0) {
       throw new Error('模版不存在');
@@ -93,22 +95,6 @@ class InitCommand extends Command {
     let projectInfo = {};
     // 3. 选择创建项目或者组件
     const type = TYPE_PROJECT;
-    // const { type } = await inquirer.prompt({
-    //   type: 'list',
-    //   message: '请选择初始化类型',
-    //   name: 'type',
-    //   default: TYPE_PROJECT,
-    //   choices: [
-    //     {
-    //       name: '项目',
-    //       value: TYPE_PROJECT,
-    //     },
-    //     {
-    //       name: '组件',
-    //       value: TYPE_COMPONENT,
-    //     },
-    //   ],
-    // });
     log.verbose('type', type);
     // console.log('getProjectInfo type', type);
     if (type === TYPE_PROJECT) {
@@ -160,8 +146,6 @@ class InitCommand extends Command {
       // console.log('o', project);
       projectInfo = { type, ...project, version: project.projectVersion };
     }
-    // else if (type === TYPE_COMPONENT) {
-    // }
     if (projectInfo.projectName) {
       projectInfo.className = kebab(projectInfo.projectName).replace(/^-/, "");
     }
