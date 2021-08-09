@@ -1,6 +1,6 @@
 {
   "name": "@xzl-fe/package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "https://github.com/wxrbwran/my-cli#readme",
@@ -27,9 +27,9 @@
     "url": "https://github.com/wxrbwran/my-cli/issues"
   },
   "dependencies": {
-    "@xzl-fe/format-path": "^0.0.1",
-    "@xzl-fe/get-npm-info": "^0.0.1",
-    "@xzl-fe/utils": "^0.0.1",
+    "@xzl-fe/format-path": "^0.0.2",
+    "@xzl-fe/get-npm-info": "^0.0.2",
+    "@xzl-fe/utils": "^0.0.2",
     "fs-extra": "^10.0.0",
     "npminstall": "^4.11.0",
     "path-exists": "^4.0.0",
