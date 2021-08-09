@@ -1,6 +1,6 @@
 {
   "name": "@xzl-fe/core",
-  "version": "0.0.2",
+  "version": "0.3.0",
   "description": "> TODO: description",
   "author": "wxrbwran <wxrbw@qq.com>",
   "homepage": "",
@@ -16,10 +16,10 @@
     "lib"
   ],
   "dependencies": {
-    "@xzl-fe/exec": "^0.0.2",
-    "@xzl-fe/get-npm-info": "^0.0.2",
-    "@xzl-fe/init": "^0.0.2",
-    "@xzl-fe/log": "^0.0.2",
+    "@xzl-fe/exec": "^0.3.0",
+    "@xzl-fe/get-npm-info": "^0.3.0",
+    "@xzl-fe/init": "^0.3.0",
+    "@xzl-fe/log": "^0.3.0",
     "colors": "^1.4.0",
     "commander": "7.0.0",
     "dotenv": "^10.0.0",
