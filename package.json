@@ -11,5 +11,7 @@
     "lerna": "^4.0.0"
   },
   "dependencies": {
+    "@xzl-fe/core": "^0.3.2",
+    "global": "^4.4.0"
   }
 }
